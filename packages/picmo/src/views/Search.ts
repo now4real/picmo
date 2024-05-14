@@ -162,6 +162,11 @@ export class Search extends View {
         this.categories
       );
 
+      // ignore search results if the search field has been cleared in the meantime
+      if (!this.searchField.value) {
+        return;
+      }
+
       this.events.emit('preview:hide');
 
       if (searchResults.length) {

@@ -1,6 +1,14 @@
 .DS_Store
 node_modules
-dist
+
+# Exclude all files inside the dist directory except index.js inside the umd folder
+packages/picmo/dist/*
+!packages/picmo/dist/umd/
+!packages/picmo/dist/umd/index.js
+
+packages/popup-picker/dist/*
+packages/renderer-twemoji/dist/*
+
 coverage
 release
 .parcel-cache

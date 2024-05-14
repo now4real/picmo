@@ -2,6 +2,10 @@
 
 For full details, see the documentation at [https://picmojs.com](https://picmojs.com).
 
+## [5.8.6] - 2024-05-14
+
+- Fixed search.
+
 ## [5.8.5] - 2023-06-23
 
 - Removed the global web storage shim when local storage is not available ([#278](https://github.com/joeattardi/picmo/issues/278))
